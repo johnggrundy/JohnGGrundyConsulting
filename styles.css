@@ -343,6 +343,16 @@ details p { color: var(--muted); margin: 12px 0 0; }
 .footer-grid h2 { font-size: .82rem; text-transform: uppercase; letter-spacing: .1em; color: #7f91a7; margin-bottom: 14px; }
 .footer-grid a { display: block; color: #d6e0eb; margin: 8px 0; }
 .footer-grid a:hover { color: #fff; }
+/* Keep the ranking badge as an understated part of the footer brand column. */
+.footer-grid .footer-ranking-badge {
+  display: block;
+  width: min(100%, 300px);
+  margin: 18px 0 0;
+  border-radius: 12px;
+  line-height: 0;
+}
+.footer-ranking-badge img { display: block; width: 100%; height: auto; }
+.footer-ranking-badge:focus-visible { outline: 2px solid #85aeff; outline-offset: 4px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 34px; padding-top: 20px; font-size: .82rem; color: #8fa0b3; display: flex; justify-content: space-between; gap: 18px; }
 
 @media (max-width: 920px) {
